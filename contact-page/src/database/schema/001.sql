@@ -10,5 +10,5 @@ create table `contact_list` (
    `password` varchar(255) default null,
    `created_at` timestamp null default null,
    primary key (id), # always need a primary key,
-   `
+   unique key `unique_contact_email` (email)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
