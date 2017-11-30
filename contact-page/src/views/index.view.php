@@ -13,7 +13,7 @@
             only really needed for the design of our site.
         -->
         <div class="container">
-           <h1>Contact Me</h1>
+           <h1>Register</h1>
            <!-- forms need two things:
                1. action - once the form has been submitted where does it go? It goes to the ACTION
                2. method - how do we want this information submitted?
@@ -24,7 +24,7 @@
 
                 http://www.diffen.com/difference/GET-vs-POST-HTTP-Requests
            -->
-           <form action="contact/form" method="post">
+           <form action="form" method="post">
                 <label for="name" class="form-group d-block">
                     Your Name
                     <input type="text" name="name" id="name" class="form-control" required>
@@ -33,15 +33,16 @@
                     Email Address?
                     <input type="email" name="email_address" id="email_address" class="form-control" required email>
                 </label>
-                <label for="website" class="form-group d-block">
-                    Website
-                    <input type="text" name="website" id="website" class="form-control">
+                <label for="password" class="form-group d-block">
+                    Password
+                    <input type="password" name="password" id="password" class="form-control">
+                </label>
+                <label for="password_confirm" class="form-group d-block">
+                    Confirm Password
+                    <input type="password" name="password_confirm" id="password_confirm" class="form-control">
                 </label>
                 <div class="form-group">
-                    <textarea name="content" id="content" cols="30" rows="10" class="form-control">Say Something</textarea>
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-primary" type="submit">Contact Me</button>
+                    <button class="btn btn-primary" type="submit">Register</button>
                 </div>
            </form>
         </div>

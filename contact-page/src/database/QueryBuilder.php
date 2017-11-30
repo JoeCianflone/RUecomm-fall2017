@@ -34,4 +34,14 @@ class QueryBuilder {
        return $statement->fetchAll();
    }
 
+   public function insert(array $data, String $tableName)
+   {
+      $statement = $this->pdo->prepare("insert into {$tableName} (name, email_address, password) values (:name, :email, :password)");
+
+      $statement->bindParam(':name', $data['name']);
+      $statement->bindParam(':email', $data['email']);
+      $statement->bindParam(':password', $data['password']);
+
+      return $statement->execute();
+   }
 }

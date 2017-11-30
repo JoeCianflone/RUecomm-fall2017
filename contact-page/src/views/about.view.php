@@ -14,6 +14,7 @@
                            <th>ID</th>
                            <th>Name</th>
                            <th>Email</th>
+                           <th>Password</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -22,6 +23,7 @@
                               <td><?=$item->id; ?></td>
                               <td><?=$item->name; ?></td>
                               <td><?=$item->email_address; ?></td>
+                              <td><?=$item->password; ?></td>
                            </tr>
                        <?php endforeach; ?>
                      </tbody>
